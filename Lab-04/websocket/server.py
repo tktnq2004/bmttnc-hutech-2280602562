@@ -30,8 +30,8 @@ def main():
         [
             (r'/websocket/', WebSocketServer)
         ],
-        websocket_ping_interval=10,
-        websocket_ping_timeout=30,
+        websocket_ping_interval=30,
+        websocket_ping_timeout=10,
     )
     app.listen(8888)
     
