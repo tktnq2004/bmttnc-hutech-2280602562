@@ -19,8 +19,8 @@ class WebSocketClient:
             url=f"ws://localhost:8888/websocket/",
             callback=self.maybe_retry_connection,
             on_message_callback=self.on_message,
-            ping_interval=10,
-            ping_timeout=30,
+            ping_interval=30,
+            ping_timeout=10,
         )
 
     def maybe_retry_connection(self, future) -> None:
